@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    border: none;
+}
+
+
+/*================================login==================================*/
+/*=======================================================================*/
+.fb-login{
+    background: #F0F2F5;
+    height: 87vh;
+    position: relative;
+}
+
+.login-container{
+    width: 53%;
+    min-width: 800px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-txt{
+    width: 60%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-txt h1{
+    color: #1877F2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+.login-txt p{
+    color: #1C1E21;
+    font-size: 1.7em;
+}
+
+.login-form{
+    width: 40%;
+    min-width: 300px;
+}
+
+.login-container form{
+    padding: 15px 15px 10px 15px;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.login-container form>*{
+    margin: 10px 0;
+}
+
+.login-container label{
+    display: block;
+    border: 1px #DDDFE2 solid;
+}
+
+.login-container input{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.login-container label input:focus{
+     outline: none;
+     border: 1px solid #1877F2;
+     padding: 14px;
+}
+
+.create-acc, .forgot-pass{
+    text-align: center;
+    padding: 15px;
+}
+
+.submit input{
+    background: #1877F2;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.forgot-pass a{
+    color: #1877F2;
+}
+
+.create-acc a{
+    background: #42B72A;
+    color: white;
+}
+
+.create-acc a:hover{
+    background: #36a420;
+}
+
+.login-form>p{
+     color: #1C1E21;
+    margin: 20px;
+ }
+
+.login-form>p>a{
+     color: #1C1E21;
+    font-weight: bold;
+ }
+
+.login-form>p>a:hover{
+    text-decoration: underline;
+ }
+
+/*============For max 500px screen==========*/
+@media all and (max-width: 850px){
+    .login-container{
+        display: block;
+        min-width: auto;
+        width: auto;
+    }
+
+    .login-txt, .login-form{
+        width: auto;
+        min-width: 300px;
+    }
+
+    .login-txt{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .login-form>p{
+        text-align: center;
+    }
+
+}
+
+/*================================login end==============================*/
+/*=======================================================================*/
+
+/*================================register===============================*/
+/*=======================================================================*/
+.register-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
+    background: white;
+    min-width: 300px;
+    display: none;
+}
+
+.register-txt{
+    padding: 15px;
+}
+
+.register-txt h2{
+    position: relative;
+}
+
+.register-txt .close::after, .register-txt .close::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.register-txt .close::after{
+    transform: rotate(45deg);
+}
+
+.register-txt .close::before{
+    transform: rotate(-45deg);
+}
+
+.signin-form{
+    padding: 15px 15px 25px;
+}
+
+.input-fild{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.input-fild:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-fild:first-child>*{
+    width: 49%;
+
+}
+
+.signin-form input{
+    border: 1px #DDDFE2 solid;
+    width: 100%;
+    padding: 10px;
+}
+
+.input-fild label{
+    font-size: 12px;
+}
+
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date select, .gender div{
+    width: 31%;
+    padding: 10px;
+}
+
+.gender, .gender div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender div{
+    border: 1px #DDDFE2 solid;
+}
+
+.signin-form p{
+    width: 100%;
+    max-width: 400px;
+    font-size: 10px;
+}
+
+.input-fild:last-child{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.signin-form a{
+    background: #00A400;
+    color: white;
+    padding: 10px 40px;
+}
+
+/*================================register end===========================*/
+/*=======================================================================*/

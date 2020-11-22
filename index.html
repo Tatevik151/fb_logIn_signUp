@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="assets/styl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<section class="fb-login">
+    <div class="login-container">
+        <div class="login-txt">
+            <h1>facebook</h1>
+            <p>
+                Connect with friends and world around you on Facebook.
+            </p>
+        </div>
+        <div class="login-form">
+            <form action="#">
+                <label for="email">
+                    <input type="email" id="email" title="email" placeholder="Email or Phone Number">
+                </label>
+                <label for="password">
+                    <input type="password" id="password" title="password" placeholder="Password">
+                </label>
+                <div class="submit">
+                    <input type="submit" title="submit" value="Log In">
+                </div>
+                <div class="forgot-pass">
+                    <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login"
+                       title="forgot password">
+                        Forgot Password?
+                    </a>
+                </div>
+                <hr>
+                <div class="create-acc">
+                    <a href="#" class="create-acc" title="create account"
+                       onclick="document.querySelector('.register-container').style.display = 'block';
+                       document.querySelector('.login-container').style.opacity = '0.5'"
+                    >Create New Account</a>
+                </div>
+            </form>
+            <p>
+                <a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a>
+                for celebrity or business.
+            </p>
+        </div>
+    </div>
+    <div class="register-container">
+        <div class="register-txt">
+            <h2>
+                Sign Up
+            </h2>
+            <p>It's quick and easy,</p>
+            <div class="close"
+                 onclick="document.querySelector('.register-container').style.display = 'none';
+                       document.querySelector('.login-container').style.opacity = '1'"
+            ></div>
+        </div>
+        <hr>
+        <div class="signin-form">
+            <form action="#">
+                <div class="input-fild">
+                    <label for="reg-name">
+                        <input type="text" id="reg-name" placeholder="First name" title="first name">
+                    </label>
+                    <label for="reg-surname">
+                        <input type="text" id="reg-surname" placeholder="Last name" title="Last name">
+                    </label>
+                </div>
+                <div class="input-fild">
+                    <label for="reg-email">
+                        <input type="email" id="reg-email" placeholder="Mobile number or email" title="email">
+                    </label>
+                </div>
+                <div class="input-fild">
+                    <label for="reg-password">
+                        <input type="password" id="reg-password" placeholder="New password" title="password">
+                    </label>
+                </div>
+                <div class="input-fild">
+                    <label>Birthday</label>
+                    <div class="date">
+                        <select name="month" title="month" id="month" onchange="monthchange()"></select>
+                        <select name="day" title="day" id="day"></select>
+                        <select name="year" title="year" id="year" onchange="monthchange()"></select>
+                    </div>
+                </div>
+                <div class="input-fild">
+                    <label>Gender</label>
+                    <div class="gender">
+                        <div>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female">
+                        </div>
+                        <div>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male">
+                        </div>
+                        <div>
+                            <label for="custom">Custom</label>
+                            <input type="radio" name="gender" id="custom">
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos excepturi facilis itaque
+                    necessitatibus perferendis praesentium quas quis, reiciendis repudiandae voluptatum!
+                </p>
+                <div class="input-fild">
+                    <a href="#">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="assets/script.js" ></script>
+</body>
+</html>
